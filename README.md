@@ -43,17 +43,45 @@ Current environment:
 
 ## Project Labs
 
-### Lab A — User Provisioning & Group Management
+#### Lab A – User and Group Management
 
-**Status: In Progress**
+## Objective
+Practice identity administration using Microsoft Entra ID by creating users, organizing accounts into security groups, and managing group memberships.
 
-- Created 12 fictional user accounts.
-- Reviewed user principal names (UPNs).
-- Examined individual user profiles.
-- Reviewed group membership.
-- Explored identity properties and assigned roles.
+## Environment
+- Platform: Microsoft Entra ID
+- Environment: Test tenant
+- Accounts: 12 fictional test users
 
-**Skills:** User provisioning, identity administration, directory management, group-based access management.
+## Tasks Completed
+
+1. Created a Microsoft Entra ID tenant.
+2. Created 12 fictional user accounts.
+3. Configured user account profiles.
+4. Created security groups.
+5. Assigned users to appropriate security groups.
+6. Reviewed group membership and user account configurations.
+
+## Security Concepts Learned
+
+- User provisioning
+- Identity lifecycle management
+- Security groups
+- Group-based access management
+- Centralized identity administration
+- Least privilege access
+
+## Testing and Validation
+
+Verified that the test accounts appeared in the user directory and that group memberships were correctly assigned.
+
+## Evidence
+
+See the `/screenshots` directory for configuration screenshots.
+
+## Results
+
+Successfully completed the initial user provisioning and group management exercises in Microsoft Entra ID.
 
 ### Lab B — Multi-Factor Authentication & Conditional Access
 
