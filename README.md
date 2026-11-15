@@ -45,6 +45,7 @@ Current environment:
 
 #### Lab A – User and Group Management
 
+
 ## Objective
 Practice identity administration using Microsoft Entra ID by creating users, organizing accounts into security groups, and managing group memberships.
 
