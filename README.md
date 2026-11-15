@@ -43,7 +43,8 @@ Current environment:
 
 ## Project Labs
 
-#### Lab A – User and Group Management
+#### Lab 
+A – User and Group Management
 
 
 ## Objective
