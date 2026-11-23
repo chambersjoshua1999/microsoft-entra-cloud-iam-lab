@@ -86,13 +86,255 @@ Successfully completed the initial user provisioning and group management exerci
 
 ### Lab B — Multi-Factor Authentication & Conditional Access
 
-**Status: Planned**
+Project Overview
 
-- Explore authentication methods.
-- Configure MFA requirements.
-- Create Conditional Access policies.
-- Test sign-in scenarios.
-- Document authentication security controls.
+This lab explores authentication security and identity protection using Microsoft Entra ID.
+
+The objective was to configure and investigate Multi-Factor Authentication (MFA), register Microsoft Authenticator, test number matching, and review sign-in logs to understand how organizations protect employee accounts.
+
+The lab uses a fictional organization, Chambers Corporation, and a dedicated test account.
+
+B1 — Security Defaults
+
+Objective
+
+Enable Microsoft's built-in identity security protections.
+
+Activities
+
+Accessed Microsoft Entra tenant properties.
+
+Located Security Defaults.
+
+Enabled Security Defaults.
+
+Reviewed the purpose of built-in security protections.
+
+Real-World Application
+
+Security Defaults provide a baseline level of identity protection by helping organizations enforce stronger authentication requirements.
+
+Status
+
+Completed.
+
+B2 — Authentication Methods
+
+Objective
+
+Understand and review the authentication methods available to organizational users.
+
+Activities
+
+Reviewed Microsoft Entra authentication methods.
+
+Located Microsoft Authenticator configuration.
+
+Reviewed authentication method availability.
+
+Investigated how users register authentication methods.
+
+Real-World Application
+
+IAM administrators manage authentication methods to ensure employees use approved and secure ways to verify their identities.
+
+Status
+
+Reviewed and documented.
+
+B3 — Microsoft Authenticator Registration
+
+Objective
+
+Register Microsoft Authenticator for a dedicated test account.
+
+Test Account
+
+Bob.Dale.Test
+
+Activities
+
+Opened the test account's authentication registration process.
+
+Registered Microsoft Authenticator.
+
+Connected the account to the Authenticator application on an iPhone.
+
+Verified the registered authentication method.
+
+Real-World Application
+
+Organizations use authenticator applications to provide an additional layer of protection beyond passwords.
+
+Status
+
+Completed.
+
+B4 — Number Matching
+
+Objective
+
+Test number matching as an additional authentication security measure.
+
+Activities
+
+Initiated a sign-in using Bob.Dale.Test.
+
+Received a number-matching authentication challenge.
+
+Opened Microsoft Authenticator.
+
+Entered the displayed number, 74.
+
+Successfully approved the authentication request.
+
+Real-World Application
+
+Number matching helps reduce accidental authentication approvals and MFA fatigue attacks.
+
+Status
+
+Completed.
+
+B5 — Sign-in Logs and Authentication Details
+
+Objective
+
+Investigate authentication activity using Microsoft Entra sign-in logs.
+
+Activities
+
+Opened the Microsoft Entra sign-in logs.
+
+Located authentication events for Bob.Dale.Test.
+
+Reviewed successful sign-in results.
+
+Inspected Authentication Details.
+
+Investigated authentication status and previously satisfied requirements.
+
+Observations
+
+The reviewed event displayed:
+
+Succeeded: True
+
+Previously satisfied: True
+
+First factor requirement
+
+A successful sign-in confirms that authentication succeeded, but a previously satisfied requirement does not independently establish that a new MFA challenge occurred during that particular event.
+
+Real-World Application
+
+Security and IAM analysts use sign-in logs to investigate authentication failures, suspicious sign-ins, and potential account compromise.
+
+Status
+
+Completed — log review performed.
+
+B6 — Fresh MFA Verification
+
+Objective
+
+Verify that MFA is enforced during a fresh authentication session.
+
+Testing Procedure
+
+Open a private browser session.
+
+Sign in using the dedicated test account.
+
+Complete the initial authentication step.
+
+Check whether an MFA challenge is presented.
+
+Complete the Authenticator verification.
+
+Review the corresponding sign-in event.
+
+Inspect Authentication Details to confirm the MFA result.
+
+Expected Evidence
+
+A fresh sign-in event showing successful MFA authentication.
+
+Status
+
+Pending final fresh sign-in verification.
+
+Conditional Access — Additional Learning
+
+Conditional Access allows organizations to create policies that evaluate sign-in conditions before granting access.
+
+Examples include:
+
+Requiring MFA for specific applications.
+
+Blocking access from specified locations.
+
+Requiring compliant devices.
+
+Applying additional authentication requirements based on risk.
+
+Custom Conditional Access policies generally require Microsoft Entra ID P1 or an eligible licensing arrangement.
+
+This lab used Security Defaults rather than custom Conditional Access policies because the available tenant did not have the required subscription.
+
+Security Defaults and Conditional Access are different security approaches and should not be represented as the same configuration.
+
+Technologies and Concepts
+
+Microsoft Entra ID
+
+Multi-Factor Authentication
+
+Microsoft Authenticator
+
+Number Matching
+
+Security Defaults
+
+Conditional Access
+
+Authentication Methods
+
+Sign-in Logs
+
+Authentication Details
+
+Identity Protection
+
+Skills Demonstrated
+
+Authentication method administration
+
+MFA registration and testing
+
+Number-matching verification
+
+Authentication troubleshooting
+
+Sign-in log investigation
+
+Identity security configuration
+
+Understanding Conditional Access
+
+Project Limitations
+
+Custom Conditional Access policies were not deployed because the tenant did not have the required licensing.
+
+Fresh MFA verification remains a final evidence item until confirmed through a new sign-in event.
+
+Conclusion
+
+This lab demonstrates foundational knowledge of identity authentication and account security using Microsoft Entra ID.
+
+The exercises provide practical experience with MFA registration, number matching, authentication monitoring, and sign-in investigation.
+
+These skills are relevant to entry-level IAM Analyst, Identity Administrator, and Security Analyst positions.
 
 ### Lab C — Role-Based Access Control (RBAC)
 
